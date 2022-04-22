@@ -784,7 +784,6 @@ body {
   width: 320px;
   height: 260px;
   background-repeat: no-repeat;
-  background-size: 520px 260px;
 }
 @media (min-width: 768px) {
   .attraction__photo--devil-bridge {
@@ -843,12 +842,13 @@ body {
     top: 40px;
     left: auto;
     right: auto;
-    background-image: url("../img/advantages/house--tablet.svg");
+    background-size: 75px 72px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item--residence::before {
-    background-image: url("../img/advantages/house--desktop.svg");
+    height: 73px;
+    background-size: 75px 73px;
   }
 }
 @media (min-width: 768px) {
@@ -875,12 +875,14 @@ body {
     top: 45px;
     left: auto;
     right: auto;
-    background-image: url("../img/advantages/burger--tablet.svg");
+    background-size: 76px 68px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item--food::before {
-    background-image: url("../img/advantages/burger--desktop.svg");
+    width: 77px;
+    height: 68px;
+    background-size: 77px 69px;
   }
 }
 .advantages__item--souvenirs::before {
@@ -902,12 +904,13 @@ body {
     top: 45px;
     left: auto;
     right: auto;
-    background-image: url("../img/advantages/gift--tablet.svg");
+    background-size: 64px 75px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item--souvenirs::before {
-    background-image: url("../img/advantages/gift--desktop.svg");
+    width: 63px;
+    background-size: 63px 75px;
   }
 }
 @media (min-width: 768px) {
