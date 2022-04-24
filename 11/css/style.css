@@ -64,6 +64,7 @@ body {
 .main-header {
   position: relative;
   background-color: #ffffff;
+  z-index: 2;
 }
 .main-header__logo {
   position: absolute;
@@ -490,11 +491,13 @@ body {
   background-size: 320px 214px;
   background-repeat: no-repeat;
   margin: 0;
+  margin-top: -56px;
   position: relative;
 }
 @media (min-width: 768px) {
   .main__introduce {
     height: 290px;
+    margin: 0;
     background-image: url("../img/intro/sedona-background--tablet.jpg");
     background-size: 768px 290px;
     background-repeat: no-repeat;
@@ -1137,6 +1140,20 @@ body {
 .introduce__logo {
   margin-top: 108px;
 }
+@media (min-width: 768px) {
+  .introduce__logo {
+    width: 457px;
+    height: 78px;
+    margin-top: 95px;
+  }
+}
+@media (min-width: 1200px) {
+  .introduce__logo {
+    width: 460px;
+    height: 80px;
+    margin-top: 101px;
+  }
+}
 .form__personal-data {
   padding: 0;
 }
@@ -1499,6 +1516,7 @@ body {
 }
 .catalog__itroduce {
   height: 214px;
+  margin-top: -56px;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../img/intro/sedona-background.jpg");
@@ -1509,6 +1527,7 @@ body {
 @media (min-width: 768px) {
   .catalog__itroduce {
     height: 290px;
+    margin: 0;
     background-image: url("../img/intro/sedona-background--tablet.jpg");
     background-size: 768px 290px;
     background-repeat: no-repeat;
@@ -1614,6 +1633,8 @@ body {
 .photos__photo {
   margin-bottom: 15px;
   align-self: center;
+  width: 280px;
+  height: 280px;
 }
 @media (min-width: 768px) {
   .photos__photo {
@@ -1768,16 +1789,39 @@ body {
 .conviction__video {
   width: 280px;
   height: 177px;
+  background-image: url("../img/video-preview/video-preview.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 288px 177px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .conviction__video {
+    background-image: url("../img/video-preview/video-preview@2x.jpg");
+  }
 }
 @media (min-width: 768px) {
   .conviction__video {
     width: 648px;
     height: 500px;
+    background-image: url("../img/video-preview/video-preview--tablet.jpg");
+    background-size: 648px 500px;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .conviction__video {
+    background-image: url("../img/video-preview/video-preview@2x--tablet.jpg");
   }
 }
 @media (min-width: 1200px) {
   .conviction__video {
     width: 800px;
+    background-image: url("../img/video-preview/video-preview--desktop.jpg");
+    background-size: 800px 500px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .conviction__video {
+    background-image: url("../img/video-preview/video-preview@2x--desktop.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */
